@@ -2,9 +2,9 @@
 
 A simple CRUD application built in Ruby on Rails.
 
-Tea Model example
+## Tea Model example
 
-name: Tippy Everest
-kind: Black
-desc: A connoisseur black tea from Nepal
+name: Tippy Everest<br/>
+kind: Black<br/>
+desc: A connoisseur black tea from Nepal<br/>
 
