@@ -1,2 +1,14 @@
-<h1>Teas#new</h1>
-<p>Find me in app/views/teas/new.html.erb</p>
+<h3>Create a Tea</h3>
+<%= form_with model: @tea do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.text_field :kind, placeholder: "kind" %>
+  <%= form.text_field :desc, placeholder: "description" %>
+  <%= form.submit %>
+<% end %>
+
+<!-- <%= form_for @tea do |form| %>
+  <%= form.text_field :name, placeholder: 'name' %>
+  <%= form.text_field :kind, placeholder: 'kind' %>
+  <%= form.text_field :desc, placeholder: "description" %>
+  <%= form.submit %>
+<% end %> -->

@@ -1,2 +1,4 @@
-<h1>Teas#show</h1>
-<p>Find me in app/views/teas/show.html.erb</p>
+<h1><%= @tea.name %></h1>
+<h4>"<%= @tea.kind %>"</h4>
+<h4>"<%= @tea.desc %>"</h4>
+<%= link_to 'Remove', @tea, method: :delet, data: { confirm: 'Are you sure?' }%>

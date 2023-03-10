@@ -1,2 +1,11 @@
-<h1>Teas#index</h1>
-<p>Find me in app/views/teas/index.html.erb</p>
+<table>
+  <% @teas.each do |tea| %>
+    <tr>
+      <td><%= link_to tea.name, tea_path(tea) %></td>
+      <td><%= button_to 'Edit', edit_tea_path(tea), method: 'get' %></td>
+      <td><%= button_to 'Remove', tea_path(tea), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+</table>
+
+<%= link_to "Add a New Tea", new_tea_path %>
